@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Attribute Selectors</title>
+    <style>
+        /*attribute="value"*/
+    [title="para"]{
+        color:red;
+        background-color:blue;
+    }
+        /*attribute ~ ="value"*/
+    [title~="para"]{
+            color:green;
+            background-color:yellow;
+    }
+        /*attribute |="value"*/
+        [title|="para"]{
+            color:blue;
+            background-color:orange;
+        }
+        /*attribute ^= "value"*/
+        [title^="para"]{
+            color:purple;
+            background-color:pink;
+        }
+        /*attribute $= "value"*/
+        [title$="para"]{
+            color:orange;
+            background-color:cyan;
+        }
+        /*attribute *= "value"*/
+        [title*="para"]{
+            color:yellow;
+            background-color:gray;
+        }
+        /*attribute ~= "value"*/
+        [title~="para"]{
+            color:blue;
+            background-color:lightgreen;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+
+    
+    <p title="para">vikram</p>
+    <p title="  para">leo</p>
+    <p title="   para  ">babu</p>
+    <p title="paraa">dhili</p>
+    
+    
+</body>
+</html>
