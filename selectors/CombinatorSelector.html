@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinatorselector</title>
+    <style>
+        /*descendant selector*/
+        div p{
+            color:green;
+            background-color: lightyellow;
+            font-size: 20px;
+        }
+        /*child selector*/
+        div > p{
+            color:blue;
+            background-color: lightcoral;
+            font-size: 22px;
+        }
+        /*adjacent sibling selector*/
+        h1+p{
+
+            color:purple;
+            background-color: lightpink;
+            font-size: 24px;
+        }
+        /* general sibling selector*/
+        h2 ~ p{
+            color:orange;
+            background-color: lightseagreen;
+            font-size: 26px;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is inside div</p>
+        <span>
+            <p>This is inside div</p>
+        </span>
+    </div>
+    <p>This is outside div</p>
+    <hr>
+    <div>
+        <p>This is another paragraph inside div</p>
+        <span>
+            <p>This is another paragraph inside div</p>
+        </span>
+    </div>
+    <h1>Adjacent sibiling</h1>
+    <p>This is a paragraph that is adjacent to the h1 element</p>
+    <p>This is another paragraph that is adjacent to the h1 element</p>
+    <h2>general sibiling</h2>
+    <p>This is a paragraph that is a general sibling of the h2 element</p>
+    <p>This is another paragraph that is a general sibling of the h2 element</p>
+</body>
+</html>
