@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element selector</title>
+    <style>
+        /*firstline*/
+        h1::first-letter{
+
+            color: darkblue;
+            background-color: lightyellow;
+            font-size: 90px;
+         }
+        /*firstletter*/
+        p::first-line{
+            color: darkred;
+            background-color: lightgray;
+            font-size: 30px;
+        }
+        /*before*/
+        h2::before{
+            content: "Pseudo Element Selector: ";
+            color: darkgreen;
+            background-color: lightcyan;
+            font-size: 20px;
+        }
+        /*after*/
+        h3::after{
+            content: " - End of Pseudo Element Selector";
+            color: darkorange;
+            background-color: lightpink;
+            font-size: 20px;
+        }
+        /*MARKER*/
+        ol > li::marker {
+            content:"😎";
+            color: darkmagenta;
+            background-color: lightgoldenrodyellow;
+            font-size: 18px;
+
+        }
+        /*selection*/
+        p::selection {
+            background-color: rgb(230, 209, 173);
+            color: darkblue;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <h1>firstline pseudo element selector</h1>
+    <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, optio officiis. Quo voluptate commodi dignissimos labore rem enim dolores nostrum culpa aliquam maiores voluptatem consequatur, fuga possimus ipsa nulla perferendis eveniet! Esse fugit, veritatis, optio quasi numquam ullam temporibus perferendis quisquam debitis sequi rerum architecto accusamus rem praesentium. Quasi dolore sapiente qui aliquam, a eos et rerum doloribus soluta provident ut est reiciendis quia, quisquam possimus ex ipsam delectus quo cupiditate similique! Quasi temporibus, fugit reiciendis excepturi corporis praesentium explicabo, quo accusantium omnis necessitatibus est quibusdam ipsam molestias! Perspiciatis, iusto rerum hic molestias dolores autem alias, expedita eveniet itaque ab error quos officia laboriosam ullam suscipit. Repellat dignissimos ex excepturi suscipit magni vero quidem, iusto sequi fugit voluptas molestiae quo voluptates a nemo veniam saepe in dolore quisquam! Cupiditate quam quis nostrum aliquid ipsam perspiciatis labore modi cum? Totam debitis dicta neque asperiores doloremque ad soluta consectetur ipsum, aspernatur vel rem eos facilis corporis reprehenderit atque esse, inventore quos amet. Maxime accusamus nihil eveniet tempora dolorem mollitia debitis eaque corrupti pariatur animi obcaecati consectetur a, saepe suscipit maiores velit molestiae inventore, enim quos veniam beatae illo! Impedit iste, consectetur recusandae eius, error qui dolorum sequi quas totam rerum similique esse placeat? Aliquid sit nemo doloremque, ad illo deserunt nesciunt cupiditate consectetur, architecto corrupti laborum possimus. Provident, nulla dolore repellendus neque reprehenderit ad. Fugiat cupiditate rem quasi amet voluptatibus labore officia ullam totam rerum repudiandae quas mollitia sapiente iure fuga maiores, consectetur earum et consequuntur ratione quae excepturi blanditiis? Tempore, nihil quo provident consectetur perferendis sit nesciunt saepe accusantium natus. Fuga, officiis libero. Quas ratione autem aliquam veritatis animi blanditiis! Porro dolor, optio non odio ea nostrum quasi. Accusamus quia odit necessitatibus distinctio unde dolore rem facilis deserunt dolorem, veritatis incidunt repellat pariatur maxime tenetur eum, iste quos assumenda? Neque quo accusamus, ad alias corporis nostrum enim dolor vel itaque laborum molestiae deserunt veritatis tempora facilis voluptatibus omnis odit inventore, quas ex dolore quam! Voluptatem enim aliquid, necessitatibus tempora quibusdam, cum distinctio aspernatur sed ipsum, minima accusantium alias in veniam expedita minus adipisci ea maiores! Molestias ipsum velit adipisci sed, eligendi amet repellat, dolor nemo maxime veniam accusantium. Eligendi est totam doloribus laborum, similique in facere sapiente repudiandae quia officiis aliquam ea debitis rem aut, nesciunt laboriosam ab quos. Aliquid iste ad necessitatibus nostrum, neque sequi, expedita optio est rem eaque odio perferendis officiis deleniti quis quo dolores suscipit possimus sit!</p>-->
+    <h2>Before pseudo element selector</h2>
+    <h3>After pseudo element selector</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <p>Marker pseudo element selector </p>
+
+
+</body>
+</html>
