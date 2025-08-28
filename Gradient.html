@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        #demo{
+            height: 100px;
+            width: 100px;
+            border: 3px solid blue;
+            /* linear gradient */
+            background: linear-gradient(to right, red , yellow);
+            
+
+        }
+        #demo1{
+            height: 100px;
+            width: 100px;
+            border: 3px solid blue;
+            /* repeating linear gradient */
+            background: repeating-linear-gradient(45deg, red, yellow 10%, green 20%);
+        }
+
+        #demo2{
+            height: 100px;
+            width: 100px;
+            border: 3px solid blue;
+            /* radial gradient */
+            background: radial-gradient( red, yellow, green);
+        }
+        #demo3{
+            height: 100px;
+            width: 100px;
+            border: 3px solid blue;
+            /* repeating radial gradient */
+            background: repeating-radial-gradient(red, yellow 10%, green 20%);
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- linear gradient -->
+     <div id="demo"> linear gradient.</div>
+     <hr>
+     <!-- repeating linear gradient -->
+      <div id="demo1">repeating linear gradient.</div>
+      <hr>
+      <!-- radial gradient -->
+       <div id="demo2">radial gradient.</div>
+       <hr>
+      <!-- repeating gradient -->
+       <div id="demo3">repeating radial gradient.</div>
+
+    
+</body>
+</html>
